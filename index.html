@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>备货管理系统</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; background-color: #f9f9f9; }
+    h1, h2 { color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 40px; background: white; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #eee; }
+    .section { margin-bottom: 60px; }
+  </style>
+</head>
+<body>
+  <h1>服装备货管理系统</h1>
+
+  <div class="section">
+    <h2>📦 备货登记表</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>日期</th><th>型号</th><th>加工厂</th><th>数量（入库）</th><th>备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2025-06-01</td><td>81166</td><td>啊耀</td><td>1200</td><td>-</td></tr>
+        <tr><td>2025-06-03</td><td>82221</td><td>小江</td><td>950</td><td>-</td></tr>
+        <tr><td>2025-06-06</td><td>82265</td><td>啊波</td><td>1000</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>🚚 出货记录表</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>日期</th><th>型号</th><th>数量（出库）</th><th>客户</th><th>备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2025-06-06</td><td>81166</td><td>267</td><td>洪武</td><td>-</td></tr>
+        <tr><td>2025-06-10</td><td>82221</td><td>275</td><td>亿达</td><td>-</td></tr>
+        <tr><td>2025-06-19</td><td>82265</td><td>298</td><td>永丰</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>📊 库存汇总表</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>型号</th><th>加工厂</th><th>总入库数量</th><th>总出库数量</th><th>当前库存</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>81166</td><td>啊耀</td><td>1200</td><td>267</td><td>933</td></tr>
+        <tr><td>82221</td><td>小江</td><td>950</td><td>275</td><td>675</td></tr>
+        <tr><td>82265</td><td>啊波</td><td>1000</td><td>298</td><td>702</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
